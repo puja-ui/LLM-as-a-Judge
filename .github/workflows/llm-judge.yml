@@ -19,6 +19,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Debug Secrets
+        env:
+          HAS_OPENAI: ${{ secrets.OPENAI_API_KEY != '' }}
+          HAS_GEMINI: ${{ secrets.GEMINI_API_KEY != '' }}
+        run: |
+          echo "Is OpenAI key present in GitHub Secrets? $HAS_OPENAI"
+          echo "Is Gemini key present in GitHub Secrets? $HAS_GEMINI"
+
       - name: Run evaluation
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
