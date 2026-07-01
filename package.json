@@ -1,0 +1,24 @@
+{
+  "name": "llm-as-a-judgev1",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test-withReporter": "vitest run --reporter=html",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  },
+  "dependencies": {
+    "@google/genai": "^2.10.0",
+    "@vitest/ui": "^4.1.9",
+    "dotenv": "^17.4.2",
+    "openai": "^6.45.0"
+  }
+}

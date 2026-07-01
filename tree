@@ -1,0 +1,22 @@
+llm-judge/
+├── src/
+│   ├── subjectApp.ts
+│   ├── judge.ts
+│   └── resultLogger.ts
+├── utils/
+│   ├── promptBuilder.ts
+│   ├── constants.ts
+│   └── helpers.ts          ← retry logic lives here
+├── data/
+│   └── testCases.json
+├── tests/
+│   └── quality.test.ts
+├── reports/                ← gitignored, auto-generated
+├── .github/
+│   └── workflows/
+│       └── llm-tests.yml
+├── .env                    ← gitignored
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── README.md

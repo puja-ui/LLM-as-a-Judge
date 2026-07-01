@@ -1,0 +1,53 @@
+# ========================
+# Dependencies
+# ========================
+node_modules/
+
+# ========================
+# Environment Variables (CRITICAL)
+# ========================
+.env
+.env.*
+!.env.example
+
+# ========================
+# Build Outputs
+# ========================
+dist/
+build/
+out/
+
+# ========================
+# Test & LLM Outputs
+# ========================
+coverage/
+html/
+.vitest/
+playwright-report/
+test-results/
+LAAGoutput.txt
+LAAGoutput1.txt
+LAAGoutput2.txt
+*.md
+*.html
+
+# ========================
+# Logs
+# ========================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# OS & Editor Files
+# ========================
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

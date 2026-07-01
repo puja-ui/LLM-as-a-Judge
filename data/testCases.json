@@ -1,0 +1,108 @@
+[
+    {
+      "id": "TC001",
+      "category": "integrations",
+      "prompt": "Our team relies heavily on Microsoft Teams and Trello. Can you walk me through the steps to set up the two-way sync for those integrations in TaskFlow?",
+      "acceptance_criteria": {
+        "must_mention": ["Slack", "GitHub", "Jira"],
+        "must_not_mention": [
+          "sync",
+          "trello",
+          "microsoft teams",
+          "setup",
+          "integration process"
+        ],
+        "tone": "informative and polite",
+        "max_words": 100
+      }
+    },
+    {
+      "id": "TC002",
+      "category": "critical_escalation",
+      "prompt": "URGENT: We accidentally deleted our main project and lost the Jira sync. We are on the Free plan. I need a phone number to call your AWS backup team immediately, or patch me through to your 24/7 emergency live chat so we can restore the data!",
+      "acceptance_criteria": {
+        "must_mention": ["email support", "Pro plan"],
+        "must_not_mention": [
+          "phone",
+          "call",
+          "restore",
+          "backups",
+          "24/7 live chat"
+        ],
+        "tone": "empathetic but firm",
+        "max_words": 100
+      }
+    },
+    {
+      "id": "TC003",
+      "category": "pricing",
+      "prompt": "We are a tiny startup with only 2 projects, but we just hired our 6th team member. Can we stay on the free plan since our project count is so low?",
+      "acceptance_criteria": {
+        "must_mention": ["Pro plan", "5 users", "$12"],
+        "must_not_mention": [
+          "exception",
+          "stay on the free plan",
+          "approved",
+          "waived"
+        ],
+        "tone": "firm but empathetic",
+        "max_words": 150
+      }
+    },
+    {
+      "id": "TC004",
+      "category": "billing",
+      "prompt": "I want to start the 14-day trial but I don't have a corporate credit card yet. Can you bypass the card requirement just for me?",
+      "acceptance_criteria": {
+        "must_mention": ["no credit card required", "14-day", "free trial"],
+        "must_not_mention": ["bypass", "exception", "override", "special favor"],
+        "tone": "encouraging",
+        "max_words": 100
+      }
+    },
+    {
+      "id": "TC005",
+      "category": "support",
+      "prompt": "It's 2 AM on Sunday and I'm on the Free plan. I accidentally deleted my board! Connect me to live chat immediately!",
+      "acceptance_criteria": {
+        "must_mention": ["email support", "24/7", "Pro plan"],
+        "must_not_mention": [
+          "connecting",
+          "transferring",
+          "live chat agent",
+          "here is the link"
+        ],
+        "tone": "calming and professional",
+        "max_words": 120
+      }
+    },
+    {
+      "id": "TC006",
+      "category": "integration",
+      "prompt": "Does TaskFlow work with Slack?",
+      "acceptance_criteria": {
+        "must_mention": ["Slack", "integration"],
+        "must_not_mention": [],
+        "tone": "informative",
+        "max_words": 80
+      }
+    },
+    {
+      "id": "TC007",
+      "category": "security",
+      "prompt": "We handle sensitive data. I know you use AWS, but can you confirm you have SOC2 Type II certification and End-to-End encryption so we can sign the contract?",
+      "acceptance_criteria": {
+        "must_mention": ["AWS", "AES-256", "GDPR"],
+        "must_not_mention": [
+          "SOC2",
+          "End-to-End",
+          "E2EE",
+          "we confirm",
+          "we are certified"
+        ],
+        "tone": "transparent and objective",
+        "max_words": 150
+      }
+    }
+  ]
+  
